@@ -320,7 +320,8 @@ h1 a {
   display: flex;
   justify-content: space-between;
   column-gap: 20px;
-  padding: 50px 1%;
+  padding: 50px 0%;
+  width: 96%;
 }
 
 .fivestars {
@@ -398,9 +399,10 @@ h1 a {
 
 .review_list2 {
   display: flex;
-  justify-content: space-evenly;
-  padding: 50px 10% 50px 1%;
+  justify-content: space-between;
+  padding: 50px 0% 50px 0%;
   text-align: center;
+  width: 90%;
 }
 
 .time::before {
@@ -423,10 +425,6 @@ h1 a {
   display: none;
 }
 
-.review_list2 li {
-  width: 30%;
-}
-
 .review_list2 p {
   color: gray;
   font-size: 1.5rem;
@@ -440,6 +438,9 @@ h1 a {
 .review_element2 {
   display: flex;
   column-gap: 20px;
+  justify-content: space-between;
+  width: 99%;
+  margin-bottom: 50px;
 }
 .review_element2 figure {
   width: 25%;
@@ -454,6 +455,11 @@ h1 a {
   flex-direction: column;
   text-align: center;
   justify-content: space-between;
+  width: 65%;
+}
+
+.review_element3 p {
+  line-height: 1.5rem;
 }
 
 .review_element2 h2 {
@@ -461,6 +467,7 @@ h1 a {
   font-size: 1.5rem;
   font-family: sans-serif;
   font-weight: 600;
+  margin-bottom: 5px;
 }
 
 .review_element2 p {
@@ -470,3 +477,114 @@ h1 a {
 }
 
 /* eye lash section done */
+
+/* how it works */
+.howitworks {
+  background-color: rgb(233, 230, 230);
+}
+
+.howitworks .wrapper {
+  text-align: center;
+}
+
+.howitworks h2 {
+  font-family: "EB Garamond";
+  font-size: 2rem;
+  padding-top: 10px;
+}
+
+.one::before {
+  content: "\2460";
+  font-family: "Font Awesome 5 Free";
+  font-size: 4rem;
+}
+
+.two::before {
+  content: "\2461";
+  font-family: "Font Awesome 5 Free";
+  font-size: 4rem;
+}
+
+.three::before {
+  content: "\2462";
+  font-family: "Font Awesome 5 Free";
+  font-size: 4rem;
+}
+
+.one span {
+  display: none;
+}
+
+.two span {
+  display: none;
+}
+
+.three span {
+  display: none;
+}
+
+.review_list3 p {
+  color: gray;
+  font-family: sans-serif;
+  font-weight: 600;
+  margin-top: 15px;
+}
+
+.review_list3 {
+  width: 100%;
+  padding: 50px 0%;
+  display: flex;
+  justify-content: space-between;
+  column-gap: 20px;
+}
+
+.review_list3 li {
+  width: 30%;
+}
+/* ends */
+
+/* service */
+
+.ourservices .wrapper {
+  text-align: center;
+}
+
+.ourservices h2 {
+  font-family: "EB Garamond";
+  font-size: 2rem;
+  margin-top: 25px;
+}
+
+.services_list {
+  display: flex;
+  column-gap: 10px;
+  margin-top: 25px;
+}
+
+.service_element .book {
+  padding: 20px 2%;
+}
+
+.service_element .book1 {
+  font-weight: 600;
+  font-family: sans-serif;
+  padding: 17px 15%;
+  background-color: #f58561;
+
+  margin-top: 50px;
+}
+
+.service_element .book2 {
+  font-weight: 600;
+  font-family: sans-serif;
+  padding: 20px 15%;
+  background-color: #f58561;
+
+  margin-top: 50px;
+  color: white;
+}
+
+.service_element img {
+  width: 100%;
+  max-height: 450px;
+}

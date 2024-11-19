@@ -281,13 +281,13 @@ h1 a {
 .banner_element {
   text-align: center;
   background-color: white;
-  width: 40%;
-  padding: 40px 1% 40px 2%;
+  width: 45%;
+  padding: 35px 1% 35px 1%;
 }
 
 .banner_element h2 {
   font-family: "EB Garamond";
-  font-size: 2.5rem;
+  font-size: 3rem;
   margin-bottom: 20px;
   font-weight: 500;
 }

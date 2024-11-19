@@ -23,6 +23,18 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
     <!-- Default style-sheet is for 'media' type screen (color computer display).  -->
     <link rel="stylesheet" media="screen" href="assets/css/styles.css" />
   </head>
@@ -33,10 +45,14 @@
         <div class="wrapper">
           <nav>
             <h1>
-              <a href="">blow LTD <sub>.</sub> </a>
+              <a href="">
+                blow <span class="ltd">L<span class="dot">T</span>D</span>
+              </a>
             </h1>
 
-            <a class="book" href="">BOOK EYELASH EXTENSIONS</a>
+            <div class="booking">
+              <button class="book1" href="">BOOK EYELASH EXTENSIONS</button>
+            </div>
           </nav>
         </div>
       </header>
@@ -50,7 +66,9 @@
               <h2>Eyelash Extension At home</h2>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam,
-                <span class="google10">Google10</span>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum,
+                aperiam!
+                <span class="google10">GOOGLE10</span>
               </p>
               <a class="book" href="">BOOK EYELASH EXTENSIONS</a>
             </div>
@@ -61,35 +79,42 @@
         <section class="review">
           <div class="wrapper">
             <ul class="review_list">
-              <li>
+              <li class="review_card">
                 <span class="fivestars"><span>five stars</span></span>
-                <span class="review_heading">Anya g</span>
+                <span class="review_heading">Anya g.</span>
                 <p class="review_desc">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum,
-                  ex!
+                  ex! Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Laboriosam ratione nesciunt
                 </p>
               </li>
-              <li>
+              <li class="review_card">
                 <span class="fivestars"><span>five stars</span></span>
-                <span class="review_heading">Anya g</span>
+                <span class="review_heading">Anya g.</span>
                 <p class="review_desc">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum,
-                  ex!
+                  ex! Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Laboriosam ratione nesciunt
                 </p>
               </li>
-              <li>
+              <li class="review_card">
                 <span class="fivestars"><span>five stars</span></span>
-                <span class="review_heading">Anya g</span>
+                <span class="review_heading">Anya g.</span>
                 <p class="review_desc">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum,
-                  ex!
+                  ex! Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Laboriosam ratione nesciunt
                 </p>
+              </li>
+              <!-- help btn -->
+              <li class="help_btn">
+                <span class="question"><span>Help</span></span>
               </li>
             </ul>
             <!-- review element1 -->
             <span class="review_element1"
-              >Rated <span>4.9</span> out of 5 based on
-              <span>1,451 verified reviews</span></span
+              >Rated <span class="rate">4.9</span> out of 5 based on
+              <span class="rate">1,451 verified reviews</span></span
             >
             <!-- review element1 ends -->
           </div>
@@ -98,7 +123,7 @@
         <section class="rating">
           <div class="wrapper">
             <!-- review list 2 -->
-            <ul class="review_list2 review_list_2">
+            <ul class="review_list2">
               <li>
                 <span class="time"><span>time</span></span>
                 <p>Lorem ipsum dolor sit amet.</p>
@@ -120,10 +145,13 @@
           <div class="wrapper">
             <div class="review_element2">
               <figure>
-                <img src="" alt="" />
+                <img
+                  src="https://images.pexels.com/photos/4198074/pexels-photo-4198074.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                />
               </figure>
               <!-- flex -->
               <div class="review_element3">
+                <h2>Home Eye Lash Extension</h2>
                 <p>
                   Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut
                   quisquam obcaecati deleniti. Recusandae, molestiae illo?
@@ -135,9 +163,11 @@
                 <p>
                   Lorem ipsum dolor sit amet.<span class="google10"
                     >Google10</span
-                  >/p>
+                  >
                 </p>
-                <a class="book" href="">BOOK EYELASH EXTENSIONS</a>
+                <div class="review_element4">
+                  <a class="book" href="">BOOK EYELASH EXTENSIONS</a>
+                </div>
               </div>
             </div>
           </div>
@@ -147,7 +177,8 @@
         <!-- how it works starts -->
         <section class="howitworks">
           <div class="wrapper">
-            <ul class="review_list">
+            <h2>How it Works</h2>
+            <ul class="review_list3">
               <li>
                 <span class="one"><span>1</span></span>
                 <p>SELECT A AT HOME EYELASH EXTENSIONS SERVICE</p>
@@ -169,29 +200,41 @@
           <div class="wrapper">
             <h2>Our services</h2>
             <ul class="services_list">
-              <li>
+              <li class="service_element">
                 <figure>
-                  <img src="" alt="" />
+                  <img
+                    src="https://images.pexels.com/photos/4198074/pexels-photo-4198074.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                    alt=""
+                  />
                 </figure>
-                <a class="book" href="">BOOK EYELASH EXTENSIONS NATURAL</a>
+                <a class="book" href="">BOOK LASH EXTENSIONS NATURAL</a>
               </li>
-              <li>
+              <li class="service_element">
                 <figure>
-                  <img src="" alt="" />
+                  <img
+                    src="https://images.pexels.com/photos/4198074/pexels-photo-4198074.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                    alt=""
+                  />
                 </figure>
-                <a class="book" href="">BOOK EYELASH EXTENSIONS VOLUME</a>
+                <a class="book" href="">BOOK LASH EXTENSIONS VOLUME</a>
               </li>
-              <li>
+              <li class="service_element">
                 <figure>
-                  <img src="" alt="" />
+                  <img
+                    src="https://images.pexels.com/photos/4198074/pexels-photo-4198074.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                    alt=""
+                  />
                 </figure>
-                <a class="book" href="">BOOK EYELASH INFILLS</a>
+                <a class="book1" href="">BOOK LASH INFILLS</a>
               </li>
-              <li>
+              <li class="service_element">
                 <figure>
-                  <img src="" alt="" />
+                  <img
+                    src="https://images.pexels.com/photos/4198074/pexels-photo-4198074.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                    alt=""
+                  />
                 </figure>
-                <a class="book" href="">BOOK LVL LASHES</a>
+                <a class="book2" href="">BOOK LVL LASHES</a>
               </li>
             </ul>
           </div>

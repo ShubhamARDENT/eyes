@@ -6,120 +6,642 @@
    v2.0 | 20110126
    License: none (public domain)
    ========================================================================== */
-	 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p,
-	 blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img,
-	 ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center,
-	 dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody,
-	 tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure,
-	 figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,
-	 time, mark, audio, video {
-		 margin: 0;
-		 padding: 0;
-		 border: 0;
-		 font-size: 100%;
-		 font: inherit;
-		 vertical-align: baseline;
-	 }
-	 
-	 /* HTML5 display-role reset for older browsers */
-	 article, aside, details, figcaption, figure,
-	 footer, header, hgroup, menu, nav, section {
-		 display: block;
-	 }
-	 
-	 /* Force scrollbar */
-	 html {
-		 overflow-y: scroll;
-	 }
-	 
-	 /* Align radios and text inputs with their label */
-	 input[type=radio] {
-		 vertical-align: text-bottom;
-	 }
-	 
-	 /* Hand cursor on clickable input elements */
-	 label,
-	 input[type=button],
-	 input[type=submit],
-	 button {
-		 cursor: pointer;
-	 }
-	 
-	 strong {
-		 font-weight: bold;
-		 font-family: inherit;
-		 font-size: inherit;
-	 }
-	 
-	 em {
-		 font-style: italic;
-	 }
-	 
-	 img {
-		 width: 100%;
-		 border: 0;
-		 vertical-align: middle;
-	 }
-	 
-	 sub,
-	 sup {
-		 vertical-align: baseline;
-		 position: relative;
-		 font-size: 55%;
-		 line-height: 0;
-	 }
-	 
-	 sup {
-		 top: -0.7em;
-	 }
-	 
-	 sub {
-		 bottom: -0.25em;
-	 }
-	 
-	 /* 1.2. Clear Fix
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+/* Force scrollbar */
+html {
+  overflow-y: scroll;
+}
+
+/* Align radios and text inputs with their label */
+input[type="radio"] {
+  vertical-align: text-bottom;
+}
+
+/* Hand cursor on clickable input elements */
+label,
+input[type="button"],
+input[type="submit"],
+button {
+  cursor: pointer;
+}
+
+strong {
+  font-weight: bold;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+em {
+  font-style: italic;
+}
+
+img {
+  width: 100%;
+  border: 0;
+  vertical-align: middle;
+}
+
+sub,
+sup {
+  vertical-align: baseline;
+  position: relative;
+  font-size: 55%;
+  line-height: 0;
+}
+
+sup {
+  top: -0.7em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+/* 1.2. Clear Fix
 			========================== */
-	 .cf:before,
-	 .cf:after {
-		 display: table;
-		 content: " ";
-	 }
-	 
-	 .cf:after {
-		 clear: both;
-	 }
-	 
-	 .cf {
-		 zoom: 1;
-	 }
-	 
-	 /* for all */
-	 body {
-		 -webkit-box-sizing: border-box;
-		 box-sizing: border-box;
-		 font-family: sans-serif;
-	 }
-	 
-	 a {
-		 display: inline-block;
-		 text-decoration: none;
-	 }
-	 
-	 li {
-		 display: inline-block;
-		 list-style-type: none;
-	 }
-	 
-	 /* for wrapper */
-	 .wrapper {
-		 max-width: 1360px;
-		 width: 60.1%;
-		 margin: 0 auto;
-	 }
-	 
-	 * {
-		 -webkit-box-sizing: border-box;
-		 box-sizing: border-box;
-		 padding: 0;
-		 margin: 0;
-	 }
+.cf:before,
+.cf:after {
+  display: table;
+  content: " ";
+}
+
+.cf:after {
+  clear: both;
+}
+
+.cf {
+  zoom: 1;
+}
+
+/* for all */
+body {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: "pt-serif" sans-serif;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+li {
+  display: inline-block;
+  list-style-type: none;
+}
+
+/* for wrapper */
+.wrapper {
+  max-width: 1360px;
+  width: 80.1%;
+  margin: 0 auto;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/* desktop version starts */
+a {
+  color: black;
+}
+
+/* nav bar */
+header nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 14px;
+}
+
+/* for blow */
+nav h1 {
+  font-size: 5rem;
+  font-weight: 600;
+}
+
+/* for anchor tag */
+h1 a {
+  color: black;
+}
+
+.ltd {
+  font-size: 2rem;
+}
+
+.ltd {
+  display: inline-flex;
+  align-items: baseline;
+  vertical-align: 15px;
+  margin-left: -20px;
+}
+
+.dot {
+  position: relative;
+  display: inline-block;
+  line-height: 1;
+}
+
+.dot::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 4px;
+  height: 4px;
+  background-color: black;
+  border-radius: 50%;
+
+}
+
+.booking {
+  display: flex;
+  align-items: center;
+}
+
+.book1 {
+  background-color: #f58561;
+  color: white;
+  font-family: sans-serif;
+  padding: 15px 5px;
+  border: none;
+  font-size: 1rem;
+}
+
+/* banner section starts */
+
+.banner {
+  background-image: url("https://images.pexels.com/photos/890550/pexels-photo-890550.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  padding: 170px 5%;
+}
+
+.banner_element {
+  text-align: center;
+  background-color: white;
+  width: 45%;
+  padding: 35px 1% 35px 1%;
+}
+
+.banner_element h2 {
+  font-family: "EB Garamond";
+  font-size: 3rem;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+.banner_element p {
+  font-family: sans-serif;
+  font-weight: 600;
+  line-height: 2rem;
+}
+
+.book {
+  background-color: #f58561;
+  padding: 15px 2%;
+  font-family: sans-serif;
+  color: white;
+  margin-top: 50px;
+  font-weight: 600;
+}
+
+.google10 {
+  color: #f58561;
+}
+
+/* banner section ends */
+
+/* review */
+
+.review .wrapper {
+  text-align: center;
+}
+
+.review_list {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 20px;
+  padding: 50px 0%;
+  width: 96%;
+}
+
+.fivestars {
+  text-align: left;
+}
+
+.fivestars::before {
+  content: "\f005\f005\f005\f005\f005";
+  font-size: 1.5rem;
+  font-family: "Font Awesome 5 Free";
+  color: #ffd43b;
+}
+
+.fivestars span {
+  display: none;
+}
+
+.review_card {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+}
+
+.review_heading {
+  margin-top: 20px;
+  color: gray;
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-align: left;
+  font-family: sans-serif;
+}
+
+.review_desc {
+  font-weight: 600;
+  font-family: sans-serif;
+  font-size: 1rem;
+  text-align: left;
+  padding-top: 5px;
+  line-height: 1.5rem;
+}
+
+.question ::before {
+  content: "\f059";
+  font-family: "Font Awesome 5 Free";
+  color: white;
+  background-color: black;
+  margin-right: 5px;
+}
+
+.question span {
+  background-color: black;
+  color: white;
+  padding: 15px 50%;
+  border-radius: 25px;
+}
+
+.help_btn {
+  margin-top: 6%;
+  margin-left: 20px;
+}
+
+.review_element1 {
+  font-size: 1rem;
+  font-family: sans-serif;
+  font-weight: 500;
+}
+
+.rate {
+  font-weight: 600;
+}
+
+/* review ends */
+
+/* rating section */
+
+.review_list2 {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 0% 50px 0%;
+  text-align: center;
+  width: 90%;
+}
+
+.time::before {
+  content: "\f017";
+  font-family: "Font Awesome 5 Free";
+  font-size: 7rem;
+}
+
+.smile::before {
+  content: "\f118";
+  font-family: "Font Awesome 5 Free";
+  font-size: 7rem;
+}
+
+.time span {
+  display: none;
+}
+
+.smile span {
+  display: none;
+}
+
+.review_list2 p {
+  color: gray;
+  font-size: 1.5rem;
+  font-family: sans-serif;
+  margin-top: 20px;
+}
+
+/* rating ends */
+
+/* eye lash starts */
+
+.review_element2 {
+  display: flex;
+  column-gap: 20px;
+  justify-content: space-between;
+  width: 99%;
+  margin-bottom: 50px;
+}
+
+.review_element2 figure {
+  width: 25%;
+}
+
+.review_element2 img {
+  max-height: 300px;
+}
+
+.review_element3 {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: space-between;
+  width: 65%;
+}
+
+.review_element3 p {
+  line-height: 1.5rem;
+}
+
+.review_element2 h2 {
+  color: gray;
+  font-size: 1.5rem;
+  font-family: sans-serif;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.review_element2 p {
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: sans-serif;
+}
+
+/* eye lash section done */
+
+/* how it works */
+.howitworks {
+  background-color: rgb(233, 230, 230);
+}
+
+.howitworks .wrapper {
+  text-align: center;
+}
+
+.howitworks h2 {
+  font-family: "EB Garamond";
+  font-size: 2rem;
+  padding-top: 10px;
+}
+
+.one::before {
+  content: "\2460";
+  font-family: "Font Awesome 5 Free";
+  font-size: 4rem;
+}
+
+.two::before {
+  content: "\2461";
+  font-family: "Font Awesome 5 Free";
+  font-size: 4rem;
+}
+
+.three::before {
+  content: "\2462";
+  font-family: "Font Awesome 5 Free";
+  font-size: 4rem;
+}
+
+.one span {
+  display: none;
+}
+
+.two span {
+  display: none;
+}
+
+.three span {
+  display: none;
+}
+
+.review_list3 p {
+  color: gray;
+  font-family: sans-serif;
+  font-weight: 600;
+  margin-top: 15px;
+}
+
+.review_list3 {
+  width: 100%;
+  padding: 50px 0%;
+  display: flex;
+  justify-content: space-between;
+  column-gap: 20px;
+}
+
+.review_list3 li {
+  width: 30%;
+}
+
+/* ends */
+
+/* service */
+
+.ourservices .wrapper {
+  text-align: center;
+}
+
+.ourservices h2 {
+  font-family: "EB Garamond";
+  font-size: 2rem;
+  margin-top: 25px;
+}
+
+.services_list {
+  display: flex;
+  column-gap: 10px;
+  margin-top: 25px;
+}
+
+.service_element .book {
+  padding: 25px 2%;
+}
+
+.service_element {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.service_element a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  height: 60px;
+  text-align: center;
+}
+
+.service_element img {
+  width: 100%;
+  max-height: 450px;
+}
+
+/* service end */
+
+
+/* mobile section */
+
+.mobile {
+  background-color: #f0efed;
+  margin-top: 50px;
+  display: flex;
+  /* Flexbox for centering */
+  justify-content: center;
+  /* Horizontally centers the wrapper */
+  align-items: center
+}
+
+.mobile .wrapper {
+  display: flex;
+}
+
+.mobile .wrapper img {
+  width: 60%;
+}
+
+.mobile_element1 {
+  width: 50%;
+}
+
+.mobile_element2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  width: 50%;
+}
+
+.mobile_element h2 {
+  font-size: 2rem;
+
+}
+
+.mobile_element1 img {
+  width: 100%;
+}
+
+/* fix width  of mobile section */

@@ -180,7 +180,7 @@ sub {
 body {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  font-family: "pt-serif" sans-serif;
+  font-family: "PT Serif", sans-serif;
 }
 
 a {
@@ -196,7 +196,7 @@ li {
 /* for wrapper */
 .wrapper {
   max-width: 1360px;
-  width: 80.1%;
+  width: 63.1%;
   margin: 0 auto;
 }
 
@@ -217,6 +217,10 @@ header nav {
   display: flex;
   justify-content: space-between;
   padding: 14px;
+}
+
+header .wrapper {
+  width: 70%;
 }
 
 /* for blow */
@@ -257,7 +261,6 @@ h1 a {
   height: 4px;
   background-color: black;
   border-radius: 50%;
-
 }
 
 .booking {
@@ -296,7 +299,8 @@ h1 a {
   font-family: "EB Garamond";
   font-size: 3rem;
   margin-bottom: 20px;
-  font-weight: 500;
+  font-weight: 600;
+  font-style: italic;
 }
 
 .banner_element p {
@@ -331,7 +335,14 @@ h1 a {
   justify-content: space-between;
   column-gap: 20px;
   padding: 50px 0%;
-  width: 96%;
+}
+
+.review_element5 {
+  display: flex;
+}
+
+.review_list li {
+  width: 80%;
 }
 
 .fivestars {
@@ -358,7 +369,7 @@ h1 a {
 .review_heading {
   margin-top: 20px;
   color: gray;
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-weight: 600;
   text-align: left;
   font-family: sans-serif;
@@ -389,8 +400,7 @@ h1 a {
 }
 
 .help_btn {
-  margin-top: 6%;
-  margin-left: 20px;
+  margin-top: 10%;
 }
 
 .review_element1 {
@@ -412,7 +422,7 @@ h1 a {
   justify-content: space-between;
   padding: 50px 0% 50px 0%;
   text-align: center;
-  width: 90%;
+  width: 89%;
 }
 
 .time::before {
@@ -448,9 +458,8 @@ h1 a {
 
 .review_element2 {
   display: flex;
-  column-gap: 20px;
-  justify-content: space-between;
-  width: 99%;
+  column-gap: 100px;
+
   margin-bottom: 50px;
 }
 
@@ -459,7 +468,7 @@ h1 a {
 }
 
 .review_element2 img {
-  max-height: 300px;
+  max-height: 313px;
 }
 
 .review_element3 {
@@ -467,7 +476,7 @@ h1 a {
   flex-direction: column;
   text-align: center;
   justify-content: space-between;
-  width: 65%;
+  width: 60%;
 }
 
 .review_element3 p {
@@ -503,24 +512,26 @@ h1 a {
   font-family: "EB Garamond";
   font-size: 2rem;
   padding-top: 10px;
+  font-style: italic;
+  font-weight: 600;
 }
 
 .one::before {
   content: "\2460";
   font-family: "Font Awesome 5 Free";
-  font-size: 4rem;
+  font-size: 3rem;
 }
 
 .two::before {
   content: "\2461";
   font-family: "Font Awesome 5 Free";
-  font-size: 4rem;
+  font-size: 3rem;
 }
 
 .three::before {
   content: "\2462";
   font-family: "Font Awesome 5 Free";
-  font-size: 4rem;
+  font-size: 3rem;
 }
 
 .one span {
@@ -543,7 +554,7 @@ h1 a {
 }
 
 .review_list3 {
-  width: 100%;
+  width: 97%;
   padding: 50px 0%;
   display: flex;
   justify-content: space-between;
@@ -562,6 +573,7 @@ h1 a {
   padding-bottom: 50px;
 }
 .ourservices .wrapper {
+  width: 70%;
   text-align: center;
 }
 
@@ -569,12 +581,15 @@ h1 a {
   font-family: "EB Garamond";
   font-size: 2rem;
   margin-top: 25px;
+  font-style: italic;
+  font-weight: 600;
 }
 
 .services_list {
   display: flex;
   column-gap: 10px;
   margin-top: 25px;
+  justify-content: center;
 }
 
 .service_element .book {
@@ -588,46 +603,42 @@ h1 a {
   justify-content: center;
 }
 
-
 .service_element a {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 250px;
+  width: 215px;
   height: 60px;
   text-align: center;
 }
 
 .service_element img {
   width: 100%;
-  max-height: 450px;
+  max-height: 500px;
+  height: 313px;
 }
 
 /* service end */
-
 
 /* mobile section */
 
 .mobile {
   background-color: #f0efed;
   margin-top: 50px;
+
   display: flex;
-  /* Flexbox for centering */
   justify-content: center;
-  /* Horizontally centers the wrapper */
-  align-items: center
+  align-items: center;
 }
 
 .mobile .wrapper {
   display: flex;
-}
-
-.mobile .wrapper img {
-  width: 60%;
+  justify-content: center;
+  width: 55%;
 }
 
 .mobile_element1 {
-  width: 50%;
+  width: 100%;
 }
 
 .mobile_element2 {
@@ -635,16 +646,437 @@ h1 a {
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  width: 50%;
+  width: 65%;
 }
 
-.mobile_element h2 {
+.mobile_element2 h2 {
   font-size: 2rem;
-
+  font-style: italic;
+  font-weight: 600;
 }
 
+/* phone */
 .mobile_element1 img {
-  width: 100%;
+  width: 80%;
 }
 
-/* fix width  of mobile section */
+/* play store */
+.mobile_element2 img {
+  width: 55%;
+}
+
+/* mobile section ends */
+
+/* footer */
+
+footer {
+  background-color: black;
+  padding: 10px;
+}
+
+footer .wrapper {
+  display: flex;
+  width: 70%;
+  justify-content: space-between;
+}
+
+.footer_element1 {
+  display: flex;
+  align-items: center;
+  color: white;
+  justify-content: space-between;
+  width: 45%;
+}
+
+.footer_element1 .contact,
+.footer_element1 .faq {
+  font-size: 1.1rem;
+  font-family: sans-serif;
+  font-weight: 500;
+}
+
+.footer_element2 {
+  display: flex;
+  color: white;
+  justify-content: space-between;
+  width: 65%;
+  padding: 0px 13%;
+  align-items: center;
+}
+.footer_element2 span {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background-color: gray;
+  border-radius: 50%;
+  color: white;
+  margin: 5px;
+  text-align: center;
+}
+
+footer h2 {
+  font-size: 3rem;
+}
+
+h2 a {
+  color: white;
+}
+
+.ltd2 {
+  font-size: 1rem;
+}
+
+.ltd2 {
+  display: inline-flex;
+  align-items: baseline;
+  vertical-align: 8px;
+  margin-left: -10px;
+}
+
+.dot2 {
+  position: relative;
+  display: inline-block;
+  line-height: 1;
+}
+
+.dot2::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 4px;
+  height: 4px;
+  background-color: white;
+  border-radius: 50%;
+}
+
+/* footer icons */
+.tumbler::before {
+  content: "\f173";
+  font-family: "Font Awesome 5 Brands";
+  font-size: 1.5rem;
+  font-weight: 600;
+  background-color: gray;
+}
+
+.facebook::before {
+  content: "\f39e";
+  font-family: "Font Awesome 5 Brands";
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.pintrest::before {
+  content: "\f231";
+  font-family: "Font Awesome 5 Brands";
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.instagram::before {
+  content: "\f16d";
+  font-family: "Font Awesome 5 Brands";
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.youtube::before {
+  content: "\f167";
+  font-family: "Font Awesome 5 Brands";
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.google::before {
+  content: "\f1a0";
+  font-family: "Font Awesome 5 Brands";
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+/* footer icons  */
+
+.footer_element2 span > span {
+  display: none;
+}
+
+/* for laptop  */
+
+@media screen and (max-width: 1022px) {
+  footer .wrapper {
+    width: 90%;
+  }
+
+  .banner_element {
+    width: 70%;
+  }
+
+  .banner_element h2 {
+    font-size: 2rem;
+  }
+
+  nav h1 {
+    font-size: 3rem;
+  }
+
+  .ltd {
+    vertical-align: 5px;
+    font-size: 1.5rem;
+    margin-left: -12px;
+  }
+
+  .services_list {
+    flex-wrap: wrap;
+    row-gap: 50px;
+    justify-content: space-between;
+  }
+
+  .services_list li {
+    width: 40%;
+  }
+
+  header .wrapper {
+    width: 90%;
+  }
+
+  .footer_element1 h2 {
+    font-size: 3rem;
+  }
+
+  .footer_element1 {
+    width: 66%;
+  }
+
+  .footer_element2 {
+    padding: 0px 0% 0px 20%;
+  }
+
+  .ltd2 {
+    vertical-align: 5px;
+    font-size: 1.5rem;
+    margin-left: -12px;
+  }
+
+  .mobile_element2 h2 {
+    font-size: 1.5rem;
+  }
+
+  .review_desc {
+    line-height: 1.3rem;
+    font-size: 1rem;
+  }
+
+  .review_element2 {
+    column-gap: 50px;
+  }
+
+  .review_element2 img {
+    max-height: 600px;
+    height: 350px;
+    padding-top: 10px;
+  }
+  .review_element2 figure {
+    height: 350px;
+    width: 50%;
+  }
+
+  .book {
+    margin-top: 20px;
+  }
+}
+
+/* for tablet */
+
+@media screen and (max-width: 928px) {
+  .review_list {
+    flex-wrap: wrap;
+    row-gap: 40px;
+  }
+
+  .help_btn {
+    margin-top: 20%;
+  }
+
+  .review_list2 {
+    width: 100%;
+  }
+
+  .rating .wrapper {
+    width: 90%;
+  }
+
+  .review_list2 p {
+    font-size: 1rem;
+    font-weight: 600;
+  }
+
+  .time::before {
+    font-size: 4rem;
+  }
+
+  .smile::before {
+    font-size: 4rem;
+  }
+
+  .review_element2 {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .review_element1 {
+    font-size: 1.3rem;
+  }
+
+  .banner_element {
+    padding: 35px 1% 35px 2%;
+  }
+
+  .banner_element p {
+    line-height: 1.5rem;
+    font-size: 0.9rem;
+  }
+
+  .banner_element h2 {
+    font-size: 1.4rem;
+  }
+
+  .book {
+    padding: 15px 1%;
+    font-size: 0.7rem;
+  }
+
+  .book1 {
+    font-size: 0.7rem;
+  }
+  .review_element3 h2 {
+    margin-top: 20px;
+    font-size: 1.3rem;
+  }
+
+  .review_element3 {
+    width: 90%;
+  }
+
+  .footer_element1 h2 {
+    font-size: 1.5rem;
+  }
+
+  .ltd2 {
+    font-size: 0.8rem;
+    margin-left: -5px;
+    vertical-align: 3px;
+  }
+
+  .service_element .book {
+    font-size: 1rem;
+  }
+}
+
+/* for mobile device*/
+
+@media screen and (max-width: 580px) {
+  .ourservices .wrapper {
+    width: 100%;
+  }
+
+  .mobile_element1 img {
+    width: 100%;
+  }
+
+  .mobile_element2 h2 {
+    font-size: 1rem;
+  }
+  .mobile_element2 img {
+    width: 89%;
+  }
+
+  footer .wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer_element1 {
+    justify-content: space-between;
+    padding: 20px;
+  }
+
+  .footer_element1 .contact {
+    font-size: 0.9rem;
+  }
+
+  .footer_element1 .faq {
+    font-size: 0.9rem;
+  }
+
+  .footer_element2 {
+    padding: 0 2%;
+    width: 99%;
+  }
+
+  .mobile .wrapper {
+    width: 82%;
+  }
+
+  .howitworks .wrapper {
+    width: 88%;
+  }
+
+  .eyelash .wrapper {
+    width: 80%;
+  }
+
+  .review_element2 figure {
+    width: 90%;
+  }
+
+  .review_list3 {
+    width: 100%;
+  }
+
+  .review_list3 p {
+    font-size: 0.9rem;
+  }
+
+  .review_list2 p {
+    font-weight: 600;
+  }
+
+  .banner_element {
+    width: 100%;
+  }
+
+  .banner_element h2 {
+    font-size: 1.2rem;
+  }
+
+  .services_list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .services_list li {
+    width: 60%;
+  }
+
+  .service_element .book {
+    font-size: 1rem;
+  }
+
+  nav h1 {
+    font-size: 2rem;
+  }
+
+  .ltd {
+    font-size: 1rem;
+    vertical-align: 4px;
+    margin-left: -7px;
+  }
+
+  .review_element4 .book {
+    font-size: 1rem;
+  }
+}

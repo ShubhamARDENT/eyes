@@ -232,6 +232,7 @@ nav h1 {
 /* for anchor tag */
 h1 a {
   color: black;
+  cursor: pointer;
 }
 
 .ltd {
@@ -285,19 +286,20 @@ h1 a {
   background-size: cover;
   background-position: center;
   width: 100%;
-  padding: 170px 5%;
+  padding: 100px 5%;
 }
 
 .banner_element {
   text-align: center;
   background-color: white;
+  opacity: 0.9;
   width: 45%;
   padding: 35px 1% 35px 1%;
 }
 
 .banner_element h2 {
   font-family: "EB Garamond";
-  font-size: 3rem;
+  font-size: 2rem;
   margin-bottom: 20px;
   font-weight: 600;
   font-style: italic;
@@ -335,6 +337,7 @@ h1 a {
   justify-content: space-between;
   column-gap: 20px;
   padding: 50px 0%;
+  position: relative;
 }
 
 .review_element5 {
@@ -389,18 +392,26 @@ h1 a {
   font-family: "Font Awesome 5 Free";
   color: white;
   background-color: black;
+  font-weight: 200;
   margin-right: 5px;
+  font-size: 1.3rem;
 }
 
 .question span {
   background-color: black;
   color: white;
-  padding: 15px 50%;
-  border-radius: 25px;
+  padding: 18px 50%;
+  border-radius: 35px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  font-family: sans-serif;
 }
 
 .help_btn {
-  margin-top: 10%;
+  position: absolute;
+  right: 150px;
+  bottom: 100px;
+  cursor: pointer;
 }
 
 .review_element1 {
@@ -688,11 +699,12 @@ footer .wrapper {
   width: 45%;
 }
 
-.footer_element1 .contact,
-.footer_element1 .faq {
+.footer_element1 .contact a,
+.footer_element1 .faq a {
   font-size: 1.1rem;
   font-family: sans-serif;
   font-weight: 500;
+  color: white;
 }
 
 .footer_element2 {
@@ -760,6 +772,7 @@ h2 a {
   font-size: 1.5rem;
   font-weight: 600;
   background-color: gray;
+  cursor: pointer;
 }
 
 .facebook::before {
@@ -767,6 +780,7 @@ h2 a {
   font-family: "Font Awesome 5 Brands";
   font-size: 1.5rem;
   font-weight: 600;
+  cursor: pointer;
 }
 
 .pintrest::before {
@@ -774,6 +788,7 @@ h2 a {
   font-family: "Font Awesome 5 Brands";
   font-size: 1.5rem;
   font-weight: 600;
+  cursor: pointer;
 }
 
 .instagram::before {
@@ -781,6 +796,7 @@ h2 a {
   font-family: "Font Awesome 5 Brands";
   font-size: 1.5rem;
   font-weight: 600;
+  cursor: pointer;
 }
 
 .youtube::before {
@@ -788,6 +804,7 @@ h2 a {
   font-family: "Font Awesome 5 Brands";
   font-size: 1.5rem;
   font-weight: 600;
+  cursor: pointer;
 }
 
 .google::before {
@@ -795,11 +812,12 @@ h2 a {
   font-family: "Font Awesome 5 Brands";
   font-size: 1.5rem;
   font-weight: 600;
+  cursor: pointer;
 }
 
 /* footer icons  */
 
-.footer_element2 span > span {
+.footer_element2 span > a > span {
   display: none;
 }
 

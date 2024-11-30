@@ -6,120 +6,1095 @@
    v2.0 | 20110126
    License: none (public domain)
    ========================================================================== */
-	 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p,
-	 blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img,
-	 ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center,
-	 dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody,
-	 tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure,
-	 figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,
-	 time, mark, audio, video {
-		 margin: 0;
-		 padding: 0;
-		 border: 0;
-		 font-size: 100%;
-		 font: inherit;
-		 vertical-align: baseline;
-	 }
-	 
-	 /* HTML5 display-role reset for older browsers */
-	 article, aside, details, figcaption, figure,
-	 footer, header, hgroup, menu, nav, section {
-		 display: block;
-	 }
-	 
-	 /* Force scrollbar */
-	 html {
-		 overflow-y: scroll;
-	 }
-	 
-	 /* Align radios and text inputs with their label */
-	 input[type=radio] {
-		 vertical-align: text-bottom;
-	 }
-	 
-	 /* Hand cursor on clickable input elements */
-	 label,
-	 input[type=button],
-	 input[type=submit],
-	 button {
-		 cursor: pointer;
-	 }
-	 
-	 strong {
-		 font-weight: bold;
-		 font-family: inherit;
-		 font-size: inherit;
-	 }
-	 
-	 em {
-		 font-style: italic;
-	 }
-	 
-	 img {
-		 width: 100%;
-		 border: 0;
-		 vertical-align: middle;
-	 }
-	 
-	 sub,
-	 sup {
-		 vertical-align: baseline;
-		 position: relative;
-		 font-size: 55%;
-		 line-height: 0;
-	 }
-	 
-	 sup {
-		 top: -0.7em;
-	 }
-	 
-	 sub {
-		 bottom: -0.25em;
-	 }
-	 
-	 /* 1.2. Clear Fix
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+/* Force scrollbar */
+html {
+  overflow-y: scroll;
+}
+
+/* Align radios and text inputs with their label */
+input[type="radio"] {
+  vertical-align: text-bottom;
+}
+
+/* Hand cursor on clickable input elements */
+label,
+input[type="button"],
+input[type="submit"],
+button {
+  cursor: pointer;
+}
+
+strong {
+  font-weight: bold;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+em {
+  font-style: italic;
+}
+
+img {
+  width: 100%;
+  border: 0;
+  vertical-align: middle;
+}
+
+sub,
+sup {
+  vertical-align: baseline;
+  position: relative;
+  font-size: 55%;
+  line-height: 0;
+}
+
+sup {
+  top: -0.7em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+/* 1.2. Clear Fix
 			========================== */
-	 .cf:before,
-	 .cf:after {
-		 display: table;
-		 content: " ";
-	 }
-	 
-	 .cf:after {
-		 clear: both;
-	 }
-	 
-	 .cf {
-		 zoom: 1;
-	 }
-	 
-	 /* for all */
-	 body {
-		 -webkit-box-sizing: border-box;
-		 box-sizing: border-box;
-		 font-family: sans-serif;
-	 }
-	 
-	 a {
-		 display: inline-block;
-		 text-decoration: none;
-	 }
-	 
-	 li {
-		 display: inline-block;
-		 list-style-type: none;
-	 }
-	 
-	 /* for wrapper */
-	 .wrapper {
-		 max-width: 1360px;
-		 width: 60.1%;
-		 margin: 0 auto;
-	 }
-	 
-	 * {
-		 -webkit-box-sizing: border-box;
-		 box-sizing: border-box;
-		 padding: 0;
-		 margin: 0;
-	 }
+.cf:before,
+.cf:after {
+  display: table;
+  content: " ";
+}
+
+.cf:after {
+  clear: both;
+}
+
+.cf {
+  zoom: 1;
+}
+
+/* for all */
+body {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: "PT Serif", sans-serif;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+li {
+  display: inline-block;
+  list-style-type: none;
+}
+
+/* for wrapper */
+.wrapper {
+  max-width: 1360px;
+  width: 63.1%;
+  margin: 0 auto;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/* desktop version starts */
+a {
+  color: black;
+}
+
+/* nav bar */
+header nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 14px;
+}
+
+header .wrapper {
+  width: 70%;
+}
+
+/* for blow */
+nav h1 {
+  font-size: 5rem;
+  font-weight: 600;
+}
+
+/* for anchor tag */
+h1 a {
+  color: black;
+  cursor: pointer;
+}
+
+.ltd {
+  font-size: 2rem;
+}
+
+.ltd {
+  display: inline-flex;
+  align-items: baseline;
+  vertical-align: 15px;
+  margin-left: -20px;
+}
+
+.dot {
+  position: relative;
+  display: inline-block;
+  line-height: 1;
+}
+
+.dot::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 4px;
+  height: 4px;
+  background-color: black;
+  border-radius: 50%;
+}
+
+.booking {
+  display: flex;
+  align-items: center;
+}
+
+.book1 {
+  background-color: #f58561;
+  color: white;
+  font-family: sans-serif;
+  padding: 15px 5px;
+  border: none;
+  font-size: 1rem;
+}
+
+/* banner section starts */
+
+.banner {
+  background-image: url("https://images.pexels.com/photos/890550/pexels-photo-890550.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  padding: 100px 5%;
+}
+
+.banner_element {
+  text-align: center;
+  background-color: white;
+  opacity: 0.9;
+  width: 45%;
+  padding: 35px 1% 35px 1%;
+}
+
+.banner_element h2 {
+  font-family: "EB Garamond";
+  font-size: 2rem;
+  margin-bottom: 20px;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.banner_element p {
+  font-family: sans-serif;
+  font-weight: 600;
+  line-height: 2rem;
+}
+
+.book {
+  background-color: #f58561;
+  padding: 15px 2%;
+  font-family: sans-serif;
+  color: white;
+  margin-top: 50px;
+  font-weight: 600;
+}
+
+.google10 {
+  color: #f58561;
+}
+
+/* banner section ends */
+
+/* review */
+
+.review .wrapper {
+  text-align: center;
+}
+
+.review_list {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 20px;
+  padding: 50px 0%;
+  position: relative;
+}
+
+.review_element5 {
+  display: flex;
+}
+
+.review_list li {
+  width: 80%;
+}
+
+.fivestars {
+  text-align: left;
+}
+
+.fivestars::before {
+  content: "\f005\f005\f005\f005\f005";
+  font-size: 1.5rem;
+  font-family: "Font Awesome 5 Free";
+  color: #ffd43b;
+}
+
+.fivestars span {
+  display: none;
+}
+
+.review_card {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+}
+
+.review_heading {
+  margin-top: 20px;
+  color: gray;
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: left;
+  font-family: sans-serif;
+}
+
+.review_desc {
+  font-weight: 600;
+  font-family: sans-serif;
+  font-size: 1rem;
+  text-align: left;
+  padding-top: 5px;
+  line-height: 1.5rem;
+}
+
+.question ::before {
+  content: "\f059";
+  font-family: "Font Awesome 5 Free";
+  color: white;
+  background-color: black;
+  font-weight: 200;
+  margin-right: 5px;
+  font-size: 1.3rem;
+}
+
+.question span {
+  background-color: black;
+  color: white;
+  padding: 18px 50%;
+  border-radius: 35px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  font-family: sans-serif;
+}
+
+.help_btn {
+  position: absolute;
+  right: 150px;
+  bottom: 100px;
+  cursor: pointer;
+}
+
+.review_element1 {
+  font-size: 1rem;
+  font-family: sans-serif;
+  font-weight: 500;
+}
+
+.rate {
+  font-weight: 600;
+}
+
+/* review ends */
+
+/* rating section */
+
+.review_list2 {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 0% 50px 0%;
+  text-align: center;
+  width: 89%;
+}
+
+.time::before {
+  content: "\f017";
+  font-family: "Font Awesome 5 Free";
+  font-size: 7rem;
+}
+
+.smile::before {
+  content: "\f118";
+  font-family: "Font Awesome 5 Free";
+  font-size: 7rem;
+}
+
+.time span {
+  display: none;
+}
+
+.smile span {
+  display: none;
+}
+
+.review_list2 p {
+  color: gray;
+  font-size: 1.5rem;
+  font-family: sans-serif;
+  margin-top: 20px;
+}
+
+/* rating ends */
+
+/* eye lash starts */
+
+.review_element2 {
+  display: flex;
+  column-gap: 100px;
+
+  margin-bottom: 50px;
+}
+
+.review_element2 figure {
+  width: 25%;
+}
+
+.review_element2 img {
+  max-height: 313px;
+}
+
+.review_element3 {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: space-between;
+  width: 60%;
+}
+
+.review_element3 p {
+  line-height: 1.5rem;
+}
+
+.review_element2 h2 {
+  color: gray;
+  font-size: 1.5rem;
+  font-family: sans-serif;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.review_element2 p {
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: sans-serif;
+}
+
+/* eye lash section done */
+
+/* how it works */
+.howitworks {
+  background-color: rgb(233, 230, 230);
+}
+
+.howitworks .wrapper {
+  text-align: center;
+}
+
+.howitworks h2 {
+  font-family: "EB Garamond";
+  font-size: 2rem;
+  padding-top: 10px;
+  font-style: italic;
+  font-weight: 600;
+}
+
+.one::before {
+  content: "\2460";
+  font-family: "Font Awesome 5 Free";
+  font-size: 3rem;
+}
+
+.two::before {
+  content: "\2461";
+  font-family: "Font Awesome 5 Free";
+  font-size: 3rem;
+}
+
+.three::before {
+  content: "\2462";
+  font-family: "Font Awesome 5 Free";
+  font-size: 3rem;
+}
+
+.one span {
+  display: none;
+}
+
+.two span {
+  display: none;
+}
+
+.three span {
+  display: none;
+}
+
+.review_list3 p {
+  color: gray;
+  font-family: sans-serif;
+  font-weight: 600;
+  margin-top: 15px;
+}
+
+.review_list3 {
+  width: 97%;
+  padding: 50px 0%;
+  display: flex;
+  justify-content: space-between;
+  column-gap: 20px;
+}
+
+.review_list3 li {
+  width: 30%;
+}
+
+/* ends */
+
+/* service */
+
+.ourservices {
+  padding-bottom: 50px;
+}
+.ourservices .wrapper {
+  width: 70%;
+  text-align: center;
+}
+
+.ourservices h2 {
+  font-family: "EB Garamond";
+  font-size: 2rem;
+  margin-top: 25px;
+  font-style: italic;
+  font-weight: 600;
+}
+
+.services_list {
+  display: flex;
+  column-gap: 10px;
+  margin-top: 25px;
+  justify-content: center;
+}
+
+.service_element .book {
+  padding: 25px 2%;
+}
+
+.service_element {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.service_element a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 215px;
+  height: 60px;
+  text-align: center;
+}
+
+.service_element img {
+  width: 100%;
+  max-height: 500px;
+  height: 313px;
+}
+
+/* service end */
+
+/* mobile section */
+
+.mobile {
+  background-color: #f0efed;
+  margin-top: 50px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mobile .wrapper {
+  display: flex;
+  justify-content: center;
+  width: 55%;
+}
+
+.mobile_element1 {
+  width: 100%;
+}
+
+.mobile_element2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  width: 65%;
+}
+
+.mobile_element2 h2 {
+  font-size: 2rem;
+  font-style: italic;
+  font-weight: 600;
+}
+
+/* phone */
+.mobile_element1 img {
+  width: 80%;
+}
+
+/* play store */
+.mobile_element2 img {
+  width: 55%;
+}
+
+/* mobile section ends */
+
+/* footer */
+
+footer {
+  background-color: black;
+  padding: 10px;
+}
+
+footer .wrapper {
+  display: flex;
+  width: 70%;
+  justify-content: space-between;
+}
+
+.footer_element1 {
+  display: flex;
+  align-items: center;
+  color: white;
+  justify-content: space-between;
+  width: 45%;
+}
+
+.footer_element1 .contact a,
+.footer_element1 .faq a {
+  font-size: 1.1rem;
+  font-family: sans-serif;
+  font-weight: 500;
+  color: white;
+}
+
+.footer_element2 {
+  display: flex;
+  color: white;
+  justify-content: space-between;
+  width: 65%;
+  padding: 0px 13%;
+  align-items: center;
+}
+.footer_element2 span {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background-color: gray;
+  border-radius: 50%;
+  color: white;
+  margin: 5px;
+  text-align: center;
+}
+
+footer h2 {
+  font-size: 3rem;
+}
+
+h2 a {
+  color: white;
+}
+
+.ltd2 {
+  font-size: 1rem;
+}
+
+.ltd2 {
+  display: inline-flex;
+  align-items: baseline;
+  vertical-align: 8px;
+  margin-left: -10px;
+}
+
+.dot2 {
+  position: relative;
+  display: inline-block;
+  line-height: 1;
+}
+
+.dot2::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 4px;
+  height: 4px;
+  background-color: white;
+  border-radius: 50%;
+}
+
+/* footer icons */
+.tumbler::before {
+  content: "\f173";
+  font-family: "Font Awesome 5 Brands";
+  font-size: 1.5rem;
+  font-weight: 600;
+  background-color: gray;
+  cursor: pointer;
+}
+
+.facebook::before {
+  content: "\f39e";
+  font-family: "Font Awesome 5 Brands";
+  font-size: 1.5rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.pintrest::before {
+  content: "\f231";
+  font-family: "Font Awesome 5 Brands";
+  font-size: 1.5rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.instagram::before {
+  content: "\f16d";
+  font-family: "Font Awesome 5 Brands";
+  font-size: 1.5rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.youtube::before {
+  content: "\f167";
+  font-family: "Font Awesome 5 Brands";
+  font-size: 1.5rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.google::before {
+  content: "\f1a0";
+  font-family: "Font Awesome 5 Brands";
+  font-size: 1.5rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* footer icons  */
+
+.footer_element2 span > a > span {
+  display: none;
+}
+
+/* for laptop  */
+
+@media screen and (max-width: 1022px) {
+  footer .wrapper {
+    width: 90%;
+  }
+
+  .banner_element {
+    width: 70%;
+  }
+
+  .banner_element h2 {
+    font-size: 2rem;
+  }
+
+  nav h1 {
+    font-size: 3rem;
+  }
+
+  .ltd {
+    vertical-align: 5px;
+    font-size: 1.5rem;
+    margin-left: -12px;
+  }
+
+  .services_list {
+    flex-wrap: wrap;
+    row-gap: 50px;
+    justify-content: space-between;
+  }
+
+  .services_list li {
+    width: 40%;
+  }
+
+  header .wrapper {
+    width: 90%;
+  }
+
+  .footer_element1 h2 {
+    font-size: 3rem;
+  }
+
+  .footer_element1 {
+    width: 66%;
+  }
+
+  .footer_element2 {
+    padding: 0px 0% 0px 20%;
+  }
+
+  .ltd2 {
+    vertical-align: 5px;
+    font-size: 1.5rem;
+    margin-left: -12px;
+  }
+
+  .mobile_element2 h2 {
+    font-size: 1.5rem;
+  }
+
+  .review_desc {
+    line-height: 1.3rem;
+    font-size: 1rem;
+  }
+
+  .review_element2 {
+    column-gap: 50px;
+  }
+
+  .review_element2 img {
+    max-height: 600px;
+    height: 350px;
+    padding-top: 10px;
+  }
+  .review_element2 figure {
+    height: 350px;
+    width: 50%;
+  }
+
+  .book {
+    margin-top: 20px;
+  }
+}
+
+/* for tablet */
+
+@media screen and (max-width: 928px) {
+  .review_list {
+    flex-wrap: wrap;
+    row-gap: 40px;
+  }
+
+  .help_btn {
+    margin-top: 20%;
+  }
+
+  .review_list2 {
+    width: 100%;
+  }
+
+  .rating .wrapper {
+    width: 90%;
+  }
+
+  .review_list2 p {
+    font-size: 1rem;
+    font-weight: 600;
+  }
+
+  .time::before {
+    font-size: 4rem;
+  }
+
+  .smile::before {
+    font-size: 4rem;
+  }
+
+  .review_element2 {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .review_element1 {
+    font-size: 1.3rem;
+  }
+
+  .banner_element {
+    padding: 35px 1% 35px 2%;
+  }
+
+  .banner_element p {
+    line-height: 1.5rem;
+    font-size: 0.9rem;
+  }
+
+  .banner_element h2 {
+    font-size: 1.4rem;
+  }
+
+  .book {
+    padding: 15px 1%;
+    font-size: 0.7rem;
+  }
+
+  .book1 {
+    font-size: 0.7rem;
+  }
+  .review_element3 h2 {
+    margin-top: 20px;
+    font-size: 1.3rem;
+  }
+
+  .review_element3 {
+    width: 90%;
+  }
+
+  .footer_element1 h2 {
+    font-size: 1.5rem;
+  }
+
+  .ltd2 {
+    font-size: 0.8rem;
+    margin-left: -5px;
+    vertical-align: 3px;
+  }
+
+  .service_element .book {
+    font-size: 1rem;
+  }
+}
+
+/* for mobile device*/
+
+@media screen and (max-width: 585px) {
+  .ourservices .wrapper {
+    width: 100%;
+  }
+
+  .mobile_element1 img {
+    width: 100%;
+  }
+
+  .mobile_element2 h2 {
+    font-size: 1rem;
+  }
+  .mobile_element2 img {
+    width: 89%;
+  }
+
+  footer .wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer_element1 {
+    justify-content: space-between;
+    padding: 20px;
+  }
+
+  .footer_element1 .contact {
+    font-size: 0.9rem;
+  }
+
+  .footer_element1 .faq {
+    font-size: 0.9rem;
+  }
+
+  .footer_element2 {
+    padding: 0 2%;
+    width: 99%;
+  }
+
+  .mobile .wrapper {
+    width: 82%;
+  }
+
+  .howitworks .wrapper {
+    width: 88%;
+  }
+
+  .eyelash .wrapper {
+    width: 80%;
+  }
+
+  .review_element2 figure {
+    width: 90%;
+  }
+
+  .review_list3 {
+    width: 100%;
+  }
+
+  .review_list3 p {
+    font-size: 0.9rem;
+  }
+
+  .review_list2 p {
+    font-weight: 600;
+  }
+
+  .banner_element {
+    width: 100%;
+  }
+
+  .banner_element h2 {
+    font-size: 1.2rem;
+  }
+
+  .services_list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .services_list li {
+    width: 60%;
+  }
+
+  .service_element .book {
+    font-size: 1rem;
+  }
+
+  nav h1 {
+    font-size: 2rem;
+  }
+
+  .ltd {
+    font-size: 1rem;
+    vertical-align: 4px;
+    margin-left: -7px;
+  }
+
+  .review_element4 .book {
+    font-size: 1rem;
+  }
+}
